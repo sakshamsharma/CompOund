@@ -8,8 +8,8 @@ from collections import OrderedDict
 from os.path import dirname, abspath
 
 VERSION=0.1
-HEADER_EXTENSIONS=set([".hh", ".hpp", ".h"])
-COMP_UNIT_EXTENSIONS=set([".cpp", ".c", ".cc", ".cxx", ".x.cpp"])
+HEADER_EXTENSIONS=frozenset([".hh", ".hpp", ".h", ".hxx"])
+COMP_UNIT_EXTENSIONS=frozenset([".cpp", ".c", ".cc", ".cxx", ".x.cpp"])
 
 # Source: https://stackoverflow.com/questions/21498939/
 def commonpath(l):
